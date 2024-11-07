@@ -1,0 +1,241 @@
+/* Base styles and variables */
+:root {
+  --primary-color: #4CAF50;
+  --secondary-color: #E0F2E1;
+  --text-color: #333;
+  --background-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+/* Typography */
+h1, h2, p {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+/* Layout */
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Header and Navigation */
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: none;
+}
+
+/* Mobile menu button */
+.menu-button {
+  display: block;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Sections */
+section {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Buttons */
+.cta-button {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Images */
+img {
+  max-width: 40%;
+  height: auto;
+  margin-top: 1rem;
+}
+
+/* Features */
+.feature-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  width: 100%;
+}
+
+.feature {
+  background-color: var(--secondary-color);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+/* Testimonials */
+.testimonial {
+  background-color: var(--secondary-color);
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.rating {
+  color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* How It Works Section */
+.how-it-works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.how-it-works h2 {
+  margin-bottom: 1rem;
+}
+
+.how-it-works > p {
+  margin-bottom: 1.5rem;
+  max-width: 600px;
+}
+
+.how-it-works ol {
+  text-align: left;
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  display: inline-block;
+  max-width: 600px;
+}
+
+.how-it-works li {
+  margin-bottom: 0.5rem;
+}
+
+.how-it-works .cta-button {
+  margin: 1.5rem 0;
+  display: block;
+}
+
+.how-it-works img {
+  max-width: 40%;
+  height: auto;
+  margin-top: 1.5rem;
+}
+
+/* Media Queries for larger screens */
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .container {
+    width: 80%;
+  }
+
+  nav {
+    width: 80%;
+  }
+
+  .nav-links {
+    display: flex;
+    list-style-type: none;
+  }
+
+  .nav-links li {
+    margin-left: 1rem;
+  }
+
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .feature-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero, .about, .how-it-works {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero img, .about img, .how-it-works img {
+    width: 40%;
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container, nav {
+    width: 70%;
+    max-width: 1200px;
+  }
+}

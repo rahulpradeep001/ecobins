@@ -1,0 +1,88 @@
+/* src/components/HomePage/HomePage.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display:contents;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .logo img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .content {
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 50px;
+  }
+  
+  .recycle-image {
+    width: 222px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .content h2 {
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .content p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .get-started,
+  .explore-now {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .get-started {
+    background-color: #0ee70e;
+    color: #fff;
+  }
+  
+  .explore-now {
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  

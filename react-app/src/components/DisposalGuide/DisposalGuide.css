@@ -1,0 +1,150 @@
+/* DisposalGuide.css */
+.disposal-guide {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    background-color: #3ae940;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .sign-in-button {
+    background-color: white;
+    color: #3ae940;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .search-container {
+    padding: 15px;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+  }
+  
+  h2 {
+    padding: 0 15px;
+  }
+  
+  .waste-items {
+    padding: 15px;
+  }
+  
+  .waste-item {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .item-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .item-info {
+    padding: 15px;
+  }
+  
+  .item-info h3 {
+    margin: 0 0 10px 0;
+  }
+  
+  .item-info p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .footer-button {
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    color: #777;
+  }
+  
+  .footer-button.active {
+    color: #3ae940;
+  }
+  
+  /* Media query for desktop screens */
+  @media screen and (min-width: 768px) {
+    .disposal-guide {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+  
+    .header {
+      border-radius: 10px 10px 0 0;
+    }
+  
+    .waste-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .waste-item {
+      width: calc(50% - 10px);
+    }
+  
+    .footer {
+      position: static;
+      background-color: #3ae940;
+      border-radius: 0 0 10px 10px;
+      margin-top: 20px;
+    }
+  
+    .footer-button {
+      color: white;
+    }
+  
+    .footer-button.active {
+      font-weight: bold;
+    }
+  }
+  
+  /* Media query for larger desktop screens */
+  @media screen and (min-width: 1024px) {
+    .disposal-guide {
+      max-width: 1000px;
+    }
+  
+    .waste-item {
+      width: calc(33.33% - 15px);
+    }
+  }

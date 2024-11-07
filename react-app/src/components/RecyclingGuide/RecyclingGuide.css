@@ -1,0 +1,139 @@
+/* RecyclingGuide.css */
+.recycling-guide {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: #fffafa;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .header {
+    background-color: #3ae940;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .search-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  h2 {
+    margin-top: 20px;
+  }
+  
+  .recycling-items {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .recycling-item {
+    display: flex;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
+                0 8px 16px rgba(0, 0, 0, 0.1),
+                0 16px 32px rgba(0, 0, 0, 0.1),
+                0 32px 64px rgba(0, 0, 0, 0.1);
+  }
+  
+  .item-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .item-info h3 {
+    margin: 0 0 5px 0;
+  }
+  
+  .item-info p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .footer-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Media query for desktop screens */
+  @media screen and (min-width: 768px) {
+    .recycling-guide {
+      max-width: 800px;
+      min-height: 700px !important;
+      padding: 40px;
+    }
+  
+    .header h1 {
+      font-size: 28px;
+    }
+  
+    .recycling-items {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .recycling-item {
+      width: calc(50% - 10px);
+    }
+  
+    .item-image {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .item-info h3 {
+      font-size: 20px;
+    }
+  
+    .item-info p {
+      font-size: 16px;
+    }
+  
+    .footer {
+      justify-content: flex-end;
+    }
+  
+    .footer-button {
+      margin-left: 20px;
+    }
+  }
+  
+  /* Media query for larger desktop screens */
+  @media screen and (min-width: 1024px) {
+    .recycling-guide {
+      max-width: 1000px;
+    }
+  
+    .recycling-item {
+      width: calc(33.33% - 20px);
+    }
+  }

@@ -1,0 +1,74 @@
+/* src/components/SearchOptions/SearchOptions.css */
+.search-options-container {
+    padding: 20px;
+    background-color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .search-options-container h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .search-option {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .search-option h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .option-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .option-group label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .option-group label input {
+    margin-right: 10px;
+  }
+  
+  .search-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 0;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .footer-nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #66fa6b;
+    position: fixed;
+    bottom: 0;
+  }
+  
+  .footer-nav .nav-item {
+    color: white;
+    text-align: center;
+    flex: 1;
+    padding: 10px;
+    cursor: pointer;
+  }
+  

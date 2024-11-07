@@ -1,0 +1,65 @@
+/* src/components/CarbonFootprintForm/CarbonFootprintForm.css */
+.carbon-footprint-form-container {
+    padding: 20px;
+    background-color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .carbon-footprint-form-container h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .form-group label {
+    margin-left: 3vw;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .form-group input {
+    display: block;
+    margin-left: 1.4vw;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .submit-button {
+    width: 90%; /* Make button full width */
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .submit-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  .submit-button:disabled {
+    background-color: #cccccc; /* Grey color when disabled */
+    cursor: not-allowed;
+  }
+  
+.result h3 {
+  margin-top: 3vh;
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+.result h3 span {
+  font-weight: bold;
+}
